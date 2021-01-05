@@ -18,7 +18,7 @@ Available templates:
 - To change the background color, modify the hex value in the BGCOLOR constant in ezmreader.js.
 - Compress the whole thing into a zip file and upload to itch.io as an HTML project that will be played in the browser.
 - Set the viewport dimension to 900 x 650.
--If you want it to be mobile friendly. set the orientation to Landscape.
+- If you want it to be mobile friendly. set the orientation to Landscape.
 
 - Turn pages with arrow keys or A&D, or click/tap on page edges.
 
