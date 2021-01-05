@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+
+    <title>Reader for EZM</title>
+</head>
+<body>
+    <div id="loading">loading zine...</div>
+    <style>
+        * {padding: 0; margin: 0;} 
+        canvas {display: block;  width: 100%; height: 100%; background-color: #f5f5f5;} 
+        #loading {position: absolute; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: #f5f5f5; font-family: Sans-Serif;}
+        .loading-hidden {display: none !important}
+    </style>
+    <script src="ezmreader.js"></script>
+
+<!--
+▋ ▊ ▌ ▙ ▌ ▍ ▇ ▖ ▌ ▀ ▉ ▊ ▄ ▌ ▘ U E █ ▍ ▆ ▋ ▚ ▄ ▋ ▆ ▝ ▅ ▄ ▄ ▐ J D
+▌ ▀ ▄ ▋ ▂ ▉ ▃ ▙ ▞ ▄ ▇ ▀ ▉ ▘ U Y U R ▋ ▚ ▛ ▀ ▄ ▎ ▍ ▋ ▖ ▋ ▂ O B ▄
+▜ ▗ ▟ ▀ █ ▉ ▟ ▆ ▐ ▗ ▞ ▍ ▉ B J ▃ ▛ B R ▅ ▇ ▙ ▟ ▞ ▆ ▍ ▋ ▘ B B ▎ ▖
+▌ ▇ ▇ ▌ ▅ ▀ ▄ █ ▚ ▍ ▞ ▌ R O ▘ ▐ ▄ ▍ R E ▞ ▘ ▀ ▎ ▔ ▜ ▀ E O ▇ ▍ ▀
+▀ ▍ ▊ ▀ ▘ ▇ ▍ ▗ ▙ ▉ ▘ O E ▙ ▂ ▎ ▃ ▚ ▙ Y U ▇ ▋ ▆ ▌ ▍ E D ▙ ▄ ▟ ▗
+▋ ▖ ▚ ▊ ▇ ▋ ▍ ▊ ▃ ▝ J Y ▛ ▀ ▞ █ ▖ ▎ ▍ ▗ U O ▄ ▉ █ U R ▅ ▘ ▃ ▅ ▙
+▛ ▀ █ ▛ █ ▜ ▇ ▙ █ O Y ▅ ▍ ▀ ▉ ▂ ▖ ▌ ▟ ▉ ▌ B U █ E O ▛ ▊ ▌ ▉ ▀ ▟
+▙ ▃ ▛ ▘ ▍ ▊ ▙ ▛ D Y ▇ ▟ ▉ ▍ ▗ ▟ ▇ ▍ ▞ ▀ ▊ ▘ Y U J ▀ ▚ ▆ ▊ ▊ ▗ ▞
+▙ ▃ ▛ ▀ ▄ ▐ ▜ B D ▊ ▛ ▐ ▃ ▙ ▆ ▙ ▚ ▟ ▉ ▇ ▄ ▚ U U M ▅ ▚ ▍ ▃ ▟ ▎ █
+▛ ▞ ▂ ▟ ▃ ▅ Y U ▘ ▗ ▟ ▉ ▚ ▄ ▅ ▟ ▆ ▉ ▄ ▃ ▅ R R ▃ Y J ▚ ▜ ▜ ▘ ▐ ▍
+▉ ▃ ▉ ▜ ▘ U O ▚ ▆ ▊ ▀ ▌ ▜ ▋ ▜ ▀ ▙ ▊ ▖ ▘ M D ▉ ▛ ▊ O Y ▉ ▝ ▙ ▍ ▅
+▎ ▜ ▀ ▝ R R ▂ ▖ ▙ ▆ ▟ ▋ ▙ ▉ ▂ ▖ ▘ ▉ ▋ R J ▉ ▌ ▙ ▊ ▇ M J █ ▄ ▞ ▎
+▊ ▂ ▅ O E ▉ ▂ ▞ ▘ ▇ ▖ ▐ ▋ ▉ ▆ ▝ ▂ ▅ O J ▟ ▛ ▉ ▟ ▉ ▉ ▇ Y Y █ ▘ █
+▋ █ E U ▊ ▚ ▉ ▀ ▅ ▛ ▗ ▇ ▐ ▃ ▍ ▉ ▐ E O ▅ ▚ ▞ ▟ ▙ ▚ ▊ ▙ ▉ O Y ▅ ▂
+▛ J B ▜ ▍ ▍ ▛ ▀ ▟ ▅ ▖ ▖ ▍ ▀ ▐ ▋ U D E E B J B R Y Y J J U E Y ▘
+M O ▛ ▚ ▎ ▃ ▉ ▝ ▘ ▃ ▃ ▝ ▌ ▍ ▗ E O O D U Y O R M O O U D Y M J B
+
+-->
+</body>
+</html>
