@@ -23,7 +23,7 @@ Available templates:
 - Turn pages with arrow keys or A&D, or click/tap on page edges.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/jeremyoduber/EZM-Reader/blob/main/LICENSE)
 
 Built with Three.js, GSAP, a bunch of tutorials, and good ol' perseverance.  
 Feel free to modify and distribute and link to as your heart desires, and don't let anyone EVER stop you.
