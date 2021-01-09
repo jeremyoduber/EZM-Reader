@@ -59,7 +59,7 @@ window.addEventListener('resize', function()
 
 // Preloader
 MANAGER.onLoad = function () {
-    LOADING_OVERLAY.classList.add('loading-hidden');
+    LOADING_OVERLAY.remove();
 }
 
 
