@@ -34,7 +34,6 @@ const LOADER = new THREE.TextureLoader(MANAGER);
 const LOADING_OVERLAY = document.querySelector('#loading');
 let card_size = new THREE.Vector2();
 let card_amount;
-let mouse = new THREE.Vector2;
 let current_state = 0;
 let textures = [];
 let cards = [];
@@ -132,22 +131,6 @@ for (let a=0; a < card_amount; a++){
     scene.add(card);
 }
 
-
-// Create hitboxes for mouse control
-let hitbox_geo = new THREE.PlaneGeometry(card_size.x/2, card_size.y);
-let hitbox_mat = new THREE.MeshBasicMaterial({color: 0xf8f800});
-hitbox_mat.transparent = true;
-hitbox_mat.opacity = 0;
-let hitbox_right_mesh = new THREE.Mesh(hitbox_geo, hitbox_mat);
-hitbox_right_mesh.position.x = (card_size.x / 4) * 3;
-hitbox_right_mesh.position.z = 1;
-let hitbox_left_mesh = new THREE.Mesh(hitbox_geo, hitbox_mat);
-hitbox_left_mesh.position.x = -(card_size.x / 4) * 3;
-hitbox_left_mesh.position.z = 1;
-
-scene.add(hitbox_right_mesh);
-scene.add(hitbox_left_mesh);
-
 function animate(){
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
@@ -170,27 +153,14 @@ function keyInput(key){
 
 
 // Mouse input
-let raycaster = new THREE.Raycaster();
-document.addEventListener("mouseup", raycast, false);
-
-function raycast(event){
-    
-    mouse.x = (event.clientX / window.innerWidth ) * 2 - 1;
-    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-    raycaster.setFromCamera(mouse, camera);
-    let intersects = raycaster.intersectObjects( scene.children );
-
-	for ( let i = 0; i < intersects.length; i++ ){
-        let intersected = intersects[0].object;
-
-        if (intersected == hitbox_left_mesh){
-            flipRight();
-        } else if (intersected == hitbox_right_mesh){
-            flipLeft();
-        }
+document.addEventListener("pointerup", function onPointerUp(event){
+    if (event.button !== 0) return;
+    if (event.clientX < window.innerWidth / 2) {
+        flipRight();
+    } else {
+        flipLeft();
     }
-}
-
+});
 
 // Flip page left
 function flipLeft(){
