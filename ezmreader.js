@@ -65,7 +65,8 @@ MANAGER.onLoad = function () {
 
 // Select template
 switch(TEMPLATE){
-    case 1: 
+    default:
+    case 1:
         card_size.set(421, 595);
         card_amount = 4; 
         textures = ['pages/FRONT.png', 'pages/INNERFRONT.png', 'pages/1.png', 'pages/2.png', 'pages/3.png', 'pages/4.png', 'pages/5.png', 'pages/BACK.png'];
@@ -88,11 +89,6 @@ switch(TEMPLATE){
         textures = ['pages/FRONT.png', 'pages/INNERFRONT.png', 'pages/1.png', 'pages/2.png', 'pages/3.png', 'pages/4.png', 'pages/5.png', 'pages/6.png', 'pages/7.png', 
         'pages/8.png', 'pages/9.png', 'pages/10.png', 'pages/11.png', 'pages/12.png', 'pages/13.png', 'pages/BACK.png'];
         break;
-    default:
-        card_size.set(421, 595);
-        card_amount = 4;
-        textures = ['pages/FRONT.png', 'pages/INNERFRONT.png', 'pages/1.png', 'pages/2.png', 'pages/3.png', 'pages/4.png', 'pages/5.png', 'pages/BACK.png'];
-
 }
 
 
