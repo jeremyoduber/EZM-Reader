@@ -62,6 +62,9 @@ MANAGER.onLoad = function () {
     LOADING_OVERLAY.remove();
 }
 
+function getTextures(num) {
+    return ['pages/FRONT.png', 'pages/INNERFRONT.png'].concat(new Array(num).fill().map((_, idx) => 'pages/' + (idx + 1) + '.png'), ['pages/BACK.png']);
+}
 
 // Select template
 switch(TEMPLATE){
@@ -69,25 +72,22 @@ switch(TEMPLATE){
     case 1:
         card_size.set(421, 595);
         card_amount = 4; 
-        textures = ['pages/FRONT.png', 'pages/INNERFRONT.png', 'pages/1.png', 'pages/2.png', 'pages/3.png', 'pages/4.png', 'pages/5.png', 'pages/BACK.png'];
+        textures = getTextures(5);
         break;
     case 2:
         card_size.set(421, 421);
         card_amount = 9;
-        textures = ['pages/FRONT.png', 'pages/INNERFRONT.png', 'pages/1.png', 'pages/2.png', 'pages/3.png', 'pages/4.png', 'pages/5.png', 'pages/6.png', 'pages/7.png', 
-        'pages/8.png', 'pages/9.png', 'pages/10.png', 'pages/11.png', 'pages/12.png', 'pages/13.png', 'pages/14.png', 'pages/15.png', 'pages/BACK.png'];
+        textures = getTextures(15);
         break;
     case 3:
         card_size.set(421, 595);
         card_amount = 8;
-        textures = ['pages/FRONT.png', 'pages/INNERFRONT.png', 'pages/1.png', 'pages/2.png', 'pages/3.png', 'pages/4.png', 'pages/5.png', 'pages/6.png', 'pages/7.png', 
-        'pages/8.png', 'pages/9.png', 'pages/10.png', 'pages/11.png', 'pages/12.png', 'pages/13.png', 'pages/BACK.png'];
+        textures = getTextures(13);
         break;
     case 4:
         card_size.set(306, 396)
         card_amount = 8;
-        textures = ['pages/FRONT.png', 'pages/INNERFRONT.png', 'pages/1.png', 'pages/2.png', 'pages/3.png', 'pages/4.png', 'pages/5.png', 'pages/6.png', 'pages/7.png', 
-        'pages/8.png', 'pages/9.png', 'pages/10.png', 'pages/11.png', 'pages/12.png', 'pages/13.png', 'pages/BACK.png'];
+        textures = getTextures(13);
         break;
 }
 
