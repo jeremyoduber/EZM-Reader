@@ -138,19 +138,13 @@ function animate(){
 
 
 // Keyboard input
-document.addEventListener('keyup', keyInput);
-
-function keyInput(key){
-
-    if (key.keyCode === 65 || key.keyCode === 37){
+document.addEventListener('keyup', function onKeyUp(key){
+    if (key.key === 'ArrowLeft' || key.key === 'a'){
         flipLeft();
-    }
-    if (key.keyCode === 68 || key.keyCode === 39){
+    } else if (key.key === 'ArrowRight' || key.key === 'd'){
         flipRight();
     }
-    
-}
-
+});
 
 // Mouse input
 document.addEventListener("pointerup", function onPointerUp(event){
