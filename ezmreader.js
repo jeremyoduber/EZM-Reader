@@ -1,13 +1,17 @@
 /*
 
-    HTML5 Reader for Electric Zine Maker, made by Jeremy Oduber in 2019 and 2020
-    v20.4
+    HTML5 Reader for Electric Zine Maker, made by Jeremy Oduber & contributors 2019-2021    
+    v21.1
     Me:
         https://twitter.com/JeremyOduber
     This:
         https://jeremyoduber.itch.io/js-zine
     Electric Zine Maker: 
         https://alienmelon.itch.io/electric-zine-maker
+    GitHub:
+        https://github.com/jeremyoduber/EZM-Reader
+    Licensed under the MIT License:
+        https://github.com/jeremyoduber/EZM-Reader/blob/main/LICENSE
     
 */
 
@@ -20,7 +24,7 @@ const TEMPLATE = 1; // Change this value to set the template
         3: 16 page mini-booklet
         4: 16 page micro-mini
 */
-const BGCOLOR = '#f5f5f5'; // Change this hex value to set the background color.
+const BGCOLOR = '#f5f5f5'; // Change this hex value to set the background color. Remember to keep the quotes!
 //---- END USER OPTIONS ----//
 
 // Setup constants and variables
@@ -96,7 +100,7 @@ Promise.all(
     })
     .catch(error => {
         console.error(error);
-        LOADING_OVERLAY.textContent = 'Something went wrong! See console for details.';
+        LOADING_OVERLAY.textContent = 'Something went wrong! Make sure your images are in the pages folder! See console for details.';
     });
 
 // Keyboard input

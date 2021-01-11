@@ -16,19 +16,20 @@ Available templates:
         4. 16 page micro-mini
 
 - To change the background color, modify the hex value in the BGCOLOR constant in ezmreader.js.
-- Compress the whole thing into a zip file and upload to itch.io as an HTML project that will be played in the browser.
-- Set the viewport dimension to 900 x 650.
-- If you want it to be mobile friendly, set the orientation to Landscape.
-
 - Turn pages with arrow keys or A&D, or click/tap on page edges.
+
+### itch.io specific instructions
+- Compress the whole thing into a zip file and upload to itch.io as an HTML project that will be played in the browser.
+- Set the viewport dimensions to whatever you like.
+- The reader is mobile friendly in either orientation, but for better readability on small screens, set it to Landscape.
+
+## Special Thanks
+[Nathalie Lawhead](https://twitter.com/alienmelon) for making Electric Zine Maker  
+[Sean S. LeBlanc](https://twitter.com/SeanSLeBlanc) for code contributions
 
 ## License
 [MIT](https://github.com/jeremyoduber/EZM-Reader/blob/main/LICENSE)
 
-Built with Three.js, GSAP, a bunch of tutorials, and good ol' perseverance.  
-Feel free to modify and distribute and link to as your heart desires, and don't let anyone EVER stop you.
-
 ## Links
-
 [project itch.io page](https://jeremyoduber.itch.io/js-zine)  
-[twitter](https://twitter.com/JeremyOduber)  
+[my twitter](https://twitter.com/JeremyOduber)  
