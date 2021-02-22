@@ -1,7 +1,7 @@
 /*
 
     HTML5 Reader for Electric Zine Maker, made by Jeremy Oduber & contributors 2019-2021    
-    v21.1
+    v21.2
     Me:
         https://twitter.com/JeremyOduber
     This:
@@ -19,10 +19,22 @@
 const TEMPLATE = 1; // Change this value to set the template
 /*  
     Available templates:
-        1: 8 page folded zine or z-fold (default)
-        2: 18 page square accordion 
-        3: 16 page mini-booklet
-        4: 16 page micro-mini
+    
+    1: 8 pages (default)
+        8 Page Folded Zine
+        8 Page Z-Fold
+        Quarter Size
+    2: 12 pages
+        Fancy T-Cut Zine
+    3: 14 pages
+        Easy Long Cut
+    4: 16 pages
+        16 Page Micro-Mini
+        Mini-Booklet
+        Fancy Flapbook
+    5: 26 pages
+        Square Accordion
+        Normal Accordion
 */
 const BGCOLOR = '#f5f5f5'; // Change this hex value to set the background color. Remember to keep the quotes!
 //---- END USER OPTIONS ----//
@@ -52,13 +64,20 @@ switch (TEMPLATE) {
         textures = getTextures(5);
         break;
     case 2:
-        card_amount = 9;
-        textures = getTextures(15);
+        card_amount = 6;
+        textures = getTextures(9);
         break;
     case 3:
+        card_amount = 7;
+        textures = getTextures(11);
+        break;
     case 4:
         card_amount = 8;
         textures = getTextures(13);
+        break;
+    case 5:
+        card_amount = 13;
+        textures = getTextures(23);
         break;
 }
 

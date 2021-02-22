@@ -7,14 +7,7 @@ See live example [here](https://jeremyoduber.itch.io/js-zine).
 ## Usage Instructions
 
 - Copy the PNG files from your Electric Zine Maker save folder into the 'pages' folder with their original filenames.
-- If you're not using the default EZM template, change the TEMPLATE constant in ezmreader.js.  
-Available templates:
-
-        1. 8 page folded zine or 8 page z-fold
-        2. 18 page square accordion zine 
-        3. 16 page mini-booklet
-        4. 16 page micro-mini
-
+- If you're not using the default EZM template, change the TEMPLATE constant in ezmreader.js. As of release all EZM templates are available but Fancy templates are not yet fancy.
 - To change the background color, modify the hex value in the BGCOLOR constant in ezmreader.js.
 - Turn pages with arrow keys or A&D, or click/tap on page edges.
 
