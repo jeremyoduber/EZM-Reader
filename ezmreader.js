@@ -1,7 +1,7 @@
 /*
 
     HTML5 Reader for Electric Zine Maker, made by Jeremy Oduber & contributors 2019-2021    
-    v21.2
+    v21.3
     Me:
         https://twitter.com/JeremyOduber
     This:
