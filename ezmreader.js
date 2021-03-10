@@ -50,6 +50,10 @@ let pages = [];
 
 document.body.style.background = BGCOLOR;
 document.body.ariaLabel = ALT;
+const metaTheme = document.createElement('meta');
+metaTheme.name = 'theme-color';
+metaTheme.content = BGCOLOR;
+document.head.appendChild(metaTheme);
 
 function getTextures(num) {
     return ['pages/FRONT.png', 'pages/INNERFRONT.png'].concat(
