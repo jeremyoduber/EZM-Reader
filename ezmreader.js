@@ -37,6 +37,7 @@ const TEMPLATE = 1; // Change this value to set the template
         Normal Accordion
 */
 const BGCOLOR = '#f5f5f5'; // Change this hex value to set the background color. Remember to keep the quotes!
+const ALT = 'Reader for Electric Zine Maker'; // Change this to a plaintext copy or description of your content to make it visible to screen-readers
 //---- END USER OPTIONS ----//
 
 // Setup constants and variables
@@ -48,6 +49,7 @@ let textures = [];
 let pages = [];
 
 document.body.style.background = BGCOLOR;
+document.body.ariaLabel = ALT;
 
 function getTextures(num) {
     return ['pages/FRONT.png', 'pages/INNERFRONT.png'].concat(
@@ -97,6 +99,7 @@ Promise.all(
     .then(imgs => {
         LOADING_OVERLAY.remove();
         const list = document.createElement('ul');
+        list.ariaHidden = true;
         pages = imgs.map((img, idx) => {
             const li = document.createElement('li');
             const flip = idx % 2;
