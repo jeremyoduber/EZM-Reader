@@ -32,9 +32,15 @@ const TEMPLATE = 1; // Change this value to set the template
         16 Page Micro-Mini
         Mini-Booklet
         Fancy Flapbook
-    5: 26 pages
+    5: 24 pages
+        Tetraflexagon
+    6: 26 pages
         Square Accordion
         Normal Accordion
+    7: 32 pages
+        Mini-Mini-Booklet
+    8: 64 pages
+        Micro
 */
 const BGCOLOR = '#f5f5f5'; // Change this hex value to set the background color. Remember to keep the quotes!
 const ALT = 'Reader for Electric Zine Maker'; // Change this to a plaintext copy or description of your content to make it visible to screen-readers
@@ -82,8 +88,20 @@ switch (TEMPLATE) {
         textures = getTextures(13);
         break;
     case 5:
+        card_amount = 12;
+        textures = getTextures(21);
+        break;
+    case 6:
         card_amount = 13;
         textures = getTextures(23);
+        break;
+    case 7:
+        card_amount = 16;
+        textures = getTextures(29);
+        break;
+    case 8:
+        card_amount = 32;
+        textures = getTextures(61);
         break;
 }
 
