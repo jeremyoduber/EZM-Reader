@@ -1,7 +1,7 @@
 /*
 
     HTML5 Reader for Electric Zine Maker, made by Jeremy Oduber & contributors 2019-2021    
-    v21.4
+    v21.5
     Me:
         https://twitter.com/JeremyOduber
     This:
@@ -44,6 +44,8 @@ const TEMPLATE = 1; // Change this value to set the template
 */
 const BGCOLOR = '#f5f5f5'; // Change this hex value to set the background color. Remember to keep the quotes!
 const ALT = 'Reader for Electric Zine Maker'; // Change this to a plaintext copy or description of your content to make it visible to screen-readers
+const SMOOTH = true; // Set to false if you want crispy pixels. Leave true if you like the blur.
+
 //---- END USER OPTIONS ----//
 
 // Setup constants and variables
@@ -56,6 +58,11 @@ let pages = [];
 
 document.body.style.background = BGCOLOR;
 document.body.ariaLabel = ALT;
+if (SMOOTH) {
+    document.body.style.imageRendering = 'auto';
+} else {
+    document.body.style.imageRendering = 'pixelated';
+}
 const metaTheme = document.createElement('meta');
 metaTheme.name = 'theme-color';
 metaTheme.content = BGCOLOR;
