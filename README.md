@@ -22,7 +22,7 @@ See live example [here](https://jeremyoduber.itch.io/js-zine).
 - The reader is mobile friendly in either orientation, but for better readability on small screens, set it to Landscape.
 
 ## Special Thanks
-[Nathalie Lawhead](https://twitter.com/alienmelon) for making Electric Zine Maker  
+[Nathalie Lawhead](https://bsky.app/profile/alienmelon.bsky.social) for making Electric Zine Maker  
 [Sean S. LeBlanc](https://twitter.com/SeanSLeBlanc) for code contributions
 
 ## License
@@ -30,4 +30,4 @@ See live example [here](https://jeremyoduber.itch.io/js-zine).
 
 ## Links
 [project itch.io page](https://jeremyoduber.itch.io/js-zine)  
-[my twitter](https://twitter.com/JeremyOduber)  
+[my bsky](https://bsky.app/profile/jeremyoduber.com)  
