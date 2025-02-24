@@ -23,7 +23,7 @@ See live example [here](https://jeremyoduber.itch.io/js-zine).
 
 ## Special Thanks
 [Nathalie Lawhead](https://bsky.app/profile/alienmelon.bsky.social) for making Electric Zine Maker  
-[Sean S. LeBlanc](https://twitter.com/SeanSLeBlanc) for code contributions
+[Sean S. LeBlanc](https://seansleblanc.itch.io/) for code contributions
 
 ## License
 [MIT](https://github.com/jeremyoduber/EZM-Reader/blob/main/LICENSE)
